@@ -1,0 +1,309 @@
+/* add hover for buttons 
+*/
+
+:root {
+    /* main colors */
+    --bg: white;
+    --text: #020208;
+    --header: #C9CEBD;
+    /* table colors */
+    --th-bg: #838E83;
+    --th-text: white;
+    --td-even: #C9CEBD;
+    --tr-hover: #d6eaf8;
+    /* butons colors */
+    --btn-text: white;
+    --btn-sort: darkblue;
+    --btn-reset: red;
+    --btn-dark:darkgrey;
+    --btn-help: darkgreen;
+    --title: #6C6061;
+    --btn-bg: #6564cf;
+}
+/* 
+palette
+    #C9CEBD
+    #B2BCAA
+    #838E83
+    #6C6061
+    #64403E 
+*/
+/* dark theme overrides*/
+body.dark, .bg-change.dark {
+    /* main colors */
+    --bg: #1a1a1a;
+    --text: white;
+    --header: #2c3e50;
+    /* table colors */
+    --th-bg: #1d5a97;
+    --th-text: white;
+    --td-even: #2c3e50;
+    --tr-hover: #1d5a97;
+    /* butons colors */
+    --btn-text: black;
+    --btn-sort: lightblue;
+    --btn-reset: rgb(235, 83, 83);
+    --btn-dark:lightgrey;
+    --btn-help: lightgreen;
+    --title: white;
+    --btn-bg: #4c4b94;
+}
+
+/* body */
+body {
+    margin: 0;
+    /* body colors */
+    background-color: var(--bg);
+    color: var(--text);
+    margin-bottom: 10em;
+    /* font  */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.tableControl{
+    margin: 0 3em;
+}
+
+/* main paragraph */
+.paragraph {
+    
+    /* border corners */
+    border-radius: 0.5em;
+    padding: 0.2em 1em;
+}
+/* main title */
+h1 {
+    padding: 0.5em 0;
+}
+/* title cool color */
+h1 ,h2 {
+    /* font */
+    font-family: 'Oswald', sans-serif;
+    color: var(--title);
+    /* upper case for titles */
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* label bold and margin left */
+label {
+    font-weight: bold;
+    margin-left: 0.5em;
+}
+
+/* select adds pointer*/
+#tableSelect {
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.buttons {
+    margin-top: 1em;
+}
+
+/* buttons  */
+button {
+    color: var(--btn-text);
+    /* border corners */
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    /* add pointer */
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 0.5em;
+}
+
+/* button colors 
+Sort → dark blue
+Reset → red
+Dark Mode → dark gray
+Help → dark green
+*/
+#sortBtn {
+    background-color: var(--btn-sort);
+}
+
+#resetBtn {
+    background-color: var(--btn-reset);
+}
+
+#darkBtn {
+    background-color: var(--btn-dark);
+}
+
+#darkBtn:hover {
+    color: rgb(48, 44, 44);
+}
+/* hover when darkmode on */
+.dark #darkBtn:hover, .dark #sortBtn:hover, 
+.dark #helpBtn:hover, .dark #resetBtn:hover{
+    color: #06315c;
+    
+}
+/* dark on colors */
+.dark #sortBtn, .dark #helpBtn {
+    color: #183450;
+} 
+
+#helpBtn {
+    background-color: var(--btn-help);
+}
+
+#bgBtn {
+    background-color: var(--btn-bg);
+}
+
+/* hover effect */
+button:hover {
+    color: #c98b18; 
+    filter: brightness(1.8);
+}
+
+/* background color of header, footer and paragraph */
+header, footer, .paragraph {
+    background-color: var(--header);
+}
+
+/* table 100% of  */
+table {
+    width: 100%;
+    /* hiddes gap between cells */
+    border-collapse: collapse;
+    /* rounds corner */
+    border-radius: 12px;      
+    overflow: hidden;
+    /* font  jetbrains*/
+    font-family: 'JetBrains Mono', 'Space Mono', monospace;
+    font-size: 14px;
+}
+
+/* table headers colors */
+th {
+    background-color: var(--th-bg);
+    color: var(--th-text);
+    padding: 0.5em 0.2em;
+}
+
+/* alternating row colors */
+tr:nth-child(even) {
+    background-color: var(--td-even);
+}
+
+/* hover effect for rows*/
+tr:hover, .bg-change tr:hover {
+    /* overrides hover color */
+    background-color:  var(--tr-hover) !important;
+    cursor: pointer;
+}
+
+/* table data cells */
+td {
+    /* adds space  */
+    padding: 0.7em 1.2em;
+}
+
+/* align numbers  right*/
+#catalog-table td:nth-child(1), /* ID */
+#catalog-table td:nth-child(5)  /* Year */ ,
+#stats td:nth-child(1), /* ID */
+#stats td:nth-child(4), /* views */
+#stats td:nth-child(5), /* watched */
+#stats td:nth-child(6), /* rating */
+#stats td:nth-child(7) /* Reviews */
+{
+    text-align: right;
+}
+
+/* align center  */
+#catalog-table td:nth-child(6)  /* rating  */ ,
+#stats td:nth-child(8) /* trend */
+{
+    text-align: center;
+}
+
+
+
+/* footer */
+footer {
+
+    display: flex;
+    /* align items like requirement left, middle and right */
+    justify-content: space-around;
+    /* sets footer on the bottom of page */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    /* not expands when screen size reduces */
+    right: 0;
+}
+/* center and right aling for footer text */
+.center { text-align: center; }
+.right { text-align: right; }
+
+/* flex for images and table */
+.main {
+    display: flex;
+
+    /* space between elements */
+    gap: 0.5em;
+    /* padding */
+    padding: 1em;
+}
+
+/* left and right imgs */
+#img-left, #img-right {
+    width: 9em;
+    flex-shrink: 0;
+}
+
+#img-left img, #img-right img {
+    /* imagewidth and height */
+    width: 100%;
+    height: auto;
+    /* rounds corners */
+    border-radius: 8px;
+}
+/* tables flex */
+#catalog, #stats {
+    /* centers table */
+    flex: 3;
+}
+
+
+/* background image class section*/
+.bg-change {
+    /* background image to use */
+    background-image: url(img/background.png);
+    color: #161b57;
+}
+
+/* header, para, and footer background color */
+.bg-change header, .bg-change .paragraph, .bg-change footer {
+    background-color: #42b0d4;
+}
+
+/* change color of h1 
+ 183849
+ 5ea4bc
+ 285a72
+ */
+
+/* change color of h1  */
+.bg-change h1 , .bg-change h2{
+    color: #092e42;
+}
+/* change color of h2 and label */
+ .bg-change label {
+    color: #dee3e9;
+} 
+
+/* background color for even rows */
+.bg-change tr:nth-child(even) {
+    background-color: #42b0d4;
+}
+
+/* backgroudn color for table header */
+.bg-change th {
+    background-color: #5ea4bc;
+    color: #082649;
+}

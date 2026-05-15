@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Movies site</title>
+    <!-- favicon png-->
+    <link rel="icon" href="img/favicon.png">
+    <!-- link for css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header and main title -->
+    <header>
+        <h1>Catalog of Movies</h1>
+    </header>
+
+    <!-- div for paragraph and buttons -->
+    <div class="tableControl">
+        <!-- paragraph for web -->
+        <div class="paragraph">
+            <p>In this site you can find information about popular movies and series. In  the first table you can see the year of release, rating, duration, language, and more.
+             In table 2 you can see the plan required, views in millions, rating by user, reviews, and more about them.</p>
+        </div>
+
+        <!-- div for buttons -->
+        <div class="buttons">
+            <button id="helpBtn">Help</button>
+            <!-- label for select table -->
+            <label for="tableSelect">View</label>
+            <select id="tableSelect">
+                <!-- values for tables -->
+                <option value="inventory">1 - Movie Catalog</option>
+                <option value="stats">2 - Movie Stats</option>
+            </select>
+
+            <button id="sortBtn" class="sort">Sort</button>
+            <button id="resetBtn" class="reset">Reset</button>
+            <button id="darkBtn" >Dark Mode</button>
+            <button id="bgBtn">Background Image [OFF]</button>
+        </div>
+    </div>
+
+    <!-- table content -->
+    <div class="main">
+        
+        <!-- left image -->
+        <div id="img-left">
+            <img src="img/movie.jpg" alt="cut scene and camera">
+        </div>
+
+        <!-- table 1 -->
+        <div id="catalog">
+            <h2 id="catalogTitle">Table 1 - Streaming Catalog</h2>
+
+            <!--  table 1 html-->
+            <table id="catalog-table">
+                <!-- table header -->
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Type</th>
+                    <th>Genre</th>
+                    <th>Year</th>
+                    <th>Rating</th>
+                    <th>Duration</th>
+                    <th>Language</th>
+                    <th>Director</th>
+                </tr>
+                <!-- table rows -->
+                <tr>
+                    <td>1</td>
+                    <td>Inception</td>
+                    <td>Movie</td>
+                    <td>Sci-Fi</td>
+                    <td>2010</td>
+                    <td>PG-13</td>
+                    <td>148 min</td>
+                    <td>English</td>
+                    <td>Christopher Nolan</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Stranger Things</td>
+                    <td>Series</td>
+                    <td>Horror</td>
+                    <td>2016</td>
+                    <td>TV-14</td>
+                    <td>4 seasons</td>
+                    <td>English</td>
+                    <td>Duffer Brothers</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Parasite</td>
+                    <td>Movie</td>
+                    <td>Thriller</td>
+                    <td>2019</td>
+                    <td>R</td>
+                    <td>132 min</td>
+                    <td>Korean</td>
+                    <td>Bong Joon-ho</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Our Planet</td>
+                    <td>Doc</td>
+                    <td>Nature</td>
+                    <td>2019</td>
+                    <td>TV-G</td>
+                    <td>8 episodes</td>
+                    <td>English</td>
+                    <td>Alastair Fothergill</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Attack on Titan</td>
+                    <td>Anime</td>
+                    <td>Action</td>
+                    <td>2013</td>
+                    <td>TV-MA</td>
+                    <td>4 seasons</td>
+                    <td>Japanese</td>
+                    <td>Tetsurō Araki</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>The Crown</td>
+                    <td>Series</td>
+                    <td>Drama</td>
+                    <td>2016</td>
+                    <td>TV-MA</td>
+                    <td>6 seasons</td>
+                    <td>English</td>
+                    <td>Peter Morgan</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Dune</td>
+                    <td>Movie</td>
+                    <td>Sci-Fi</td>
+                    <td>2021</td>
+                    <td>PG-13</td>
+                    <td>155 min</td>
+                    <td>English</td>
+                    <td>Denis Villeneuve</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Wednesday</td>
+                    <td>Series</td>
+                    <td>Comedy</td>
+                    <td>2022</td>
+                    <td>TV-14</td>
+                    <td>2 seasons</td>
+                    <td>English</td>
+                    <td>Tim Burton</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>13th</td>
+                    <td>Doc</td>
+                    <td>History</td>
+                    <td>2016</td>
+                    <td>TV-MA</td>
+                    <td>100 min</td>
+                    <td>English</td>
+                    <td>Ava DuVernay</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Spirited Away</td>
+                    <td>Movie</td>
+                    <td>Fantasy</td>
+                    <td>2001</td>
+                    <td>PG</td>
+                    <td>125 min</td>
+                    <td>Japanese</td>
+                    <td>Hayao Miyazaki</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- div id for table 2 -->
+        <div id="stats"></div>
+
+        <!-- right image -->
+         <div id="img-right">
+            <img src="img/movie.jpg" alt="cut scene and camera">
+        </div>
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <p class="left">COMI-2010</p>
+        <p class="center">Assignment 3</p>
+        <p class="right">Miranda</p>
+    </footer>
+
+
+    <script>
+         
+        //Table 2: view stats JSON
+        const statsJSON = [
+            { "ID": 1, "Title": "Inception",       "Plan": "Standard", "Views": 42.3, "Watched": 91, "Rating": 4.8, "Reviews": 128400, "Trend": "up"   },
+            { "ID": 2, "Title": "Stranger Things", "Plan": "Premium",  "Views": 87.6, "Watched": 78, "Rating": 4.7, "Reviews": 312000, "Trend": "up"   },
+            { "ID": 3, "Title": "Parasite",        "Plan": "Standard", "Views": 31.1, "Watched": 88, "Rating": 4.9, "Reviews": 95200,  "Trend": "up"   },
+            { "ID": 4, "Title": "Our Planet",      "Plan": "Basic",    "Views": 18.4, "Watched": 55, "Rating": 4.6, "Reviews": 42100,  "Trend": "down" },
+            { "ID": 5, "Title": "Attack on Titan", "Plan": "Premium",  "Views": 64.9, "Watched": 83, "Rating": 4.9, "Reviews": 204800, "Trend": "up"   }
+        ];
+    
+    </script>
+    <!-- link to js file -->
+    <script src="app.js"></script>
+</body>
+</html>
