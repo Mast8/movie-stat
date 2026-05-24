@@ -55,7 +55,7 @@ body {
     /* body colors */
     background-color: var(--bg);
     color: var(--text);
-    margin-bottom: 10em;
+    margin-bottom: 4em;
     /* font  */
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
@@ -99,6 +99,9 @@ label {
 
 .buttons {
     margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* buttons  */
