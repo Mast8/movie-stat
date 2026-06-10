@@ -311,7 +311,15 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+    table {
+        font-size: 11px;
+    }
     .main {
         flex-direction: column;
+    }
+
+    #img-left, #img-right {
+        margin: 0 auto;
     }
 }
