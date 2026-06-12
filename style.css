@@ -1,5 +1,3 @@
-/* add hover for buttons 
-*/
 
 :root {
     /* main colors */
@@ -295,7 +293,7 @@ footer {
     color: #092e42;
 }
 /* change color of h2 and label */
- .bg-change label {
+.bg-change label {
     color: #dee3e9;
 } 
 
