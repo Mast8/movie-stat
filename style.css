@@ -316,13 +316,9 @@ footer {
     table {
         font-size: 11px;
     }
-    .main {
-        flex-direction: column;
-    }
+    
 
-    #img-left, #img-right {
-        margin: 0 auto;
-    }
+    
 
     .buttons {
         flex-direction: column;
@@ -330,5 +326,14 @@ footer {
     button {
         
         margin: 0.3em;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main {
+        flex-direction: column;
+    }
+    #img-left, #img-right {
+        margin: 0 auto;
     }
 }
