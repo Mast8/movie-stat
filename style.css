@@ -308,17 +308,28 @@ footer {
     color: #082649;
 }
 
+
+@media (max-width: 1000px) {
+    table {
+        font-size: 12px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+    #img-left, #img-right {
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 768px) {
 
     td {
         padding: 0.8em 0.4em;
     }
     table {
-        font-size: 11px;
+        font-size: 10px;
     }
-    
-
-    
 
     .buttons {
         flex-direction: column;
@@ -326,14 +337,5 @@ footer {
     button {
         
         margin: 0.3em;
-    }
-}
-
-@media (max-width: 1200px) {
-    .main {
-        flex-direction: column;
-    }
-    #img-left, #img-right {
-        margin: 0 auto;
     }
 }
