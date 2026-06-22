@@ -98,9 +98,6 @@ label {
     margin-top: 1em;
     display: flex;
     justify-content: center;
-    
-
-    
     flex-wrap: wrap;
     gap: 10px;
     align-items: center;
@@ -109,10 +106,10 @@ label {
 
 .buttons button, 
 .buttons select {
-  padding: 8px 16px;
-  font-size: 14px;
-  flex: 1 1 auto;
-  min-width: 120px;
+    padding: 8px 16px;
+    font-size: 14px;
+    flex: 1 1 auto;
+    min-width: 80px;
 }
 
 /* buttons  */
@@ -345,9 +342,9 @@ footer {
         font-size: 10px;
     }
     .buttons button, 
-  .buttons select {
-    flex: 1 1 100%;
-  }
+    .buttons select {
+        flex: 1 1 100%;
+    }
     button {
         
         margin: 0.3em;
